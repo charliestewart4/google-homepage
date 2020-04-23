@@ -6,6 +6,25 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Google</title>
   </head>
+  <header>
+    <div class="about">About</div>
+    <div class="store">Store</div>
+    <div class="mail">Gmail</div>
+    <div class="images">Images</div>
+    <div class="menuSquares">
+      <img
+        class="menuSquares"
+        src="https://www.svgrepo.com/show/8555/nine-squares.svg"
+        alt="nine-squares"
+      />
+    </div>
+    <div class="login">
+      <img
+      src="https://lh3.googleusercontent.com/-3ggjTMKFMTw/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmQLX-Qb-bMV5odPjtlYwAks51h_A.CMID/s64-c/photo.jpg"
+      alt="login image" class="login"
+    </div>
+  </header>
+
   <body>
     <div class="content-main">
       <img
@@ -13,22 +32,45 @@
         alt="Google Logo"
       />
       <div class="bar">
-        <form id="searchbar">
-          <label for="search">🔍</label>
-          <input
-            type="text"
-            name="search"
-            placeholder="type here"
-            size="60px"
+        <div>
+          <form id="barExt">
+            <label for="search">🔍</label>
+            <input type="text" name="search" size="80%" />
+          </form>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg"
+            alt="mic-icon"
+            id="micIcon"
           />
-          <input
-            type="submit"
-            name="search"
-            id="submit-button"
-            value="Search"
-          />
-        </form>
+        </div>
+      </div>
+      <div class="buttonBar">
+        <input
+          type="submit"
+          name="search"
+          id="submit-button"
+          value="Google Search"
+          class="button"
+        />
+        <input
+          type="button"
+          value="I'm Feeling Lucky"
+          id="luckyButton"
+          class="button"
+        />
       </div>
     </div>
   </body>
+
+  <footer>
+    <div class="country">United Kingdom</div>
+    <div class="adv">Advertising</div>
+    <div class="business">Business</div>
+    <div class="hsw">How Search works</div>
+    <div class="priv">Privacy</div>
+    <div class="terms">Terms</div>
+    <div class="settings">Settings</div>
+  </footer>
 </html>

@@ -1,3 +1,52 @@
+header {
+  display: grid;
+  grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+  grid-template-rows: 48px;
+  grid-template-areas: "about store . mail images menuSquares login";
+}
+
+header,
+footer {
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  align-items: center;
+  justify-items: center;
+}
+
+header div.about {
+  grid-area: about;
+}
+
+header div.store {
+  grid-area: store;
+}
+
+header div.mail {
+  grid-area: mail;
+}
+
+header div.images {
+  grid-area: images;
+}
+
+header div.menuSquares {
+  grid-area: menuSquares;
+}
+img.menuSquares {
+  grid-area: menuSquares;
+  height: 16px;
+  width: 16px;
+  opacity: 50%;
+}
+header div.login {
+  grid-area: login;
+}
+img.login {
+  transform: scale(0.5);
+  border-radius: 50%;
+}
+
 .content-main {
   position: relative;
   display: flex;
@@ -6,10 +55,10 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 100px;
   /* background-color: aqua; */
-  width: 90%;
-  height: 150px;
+  width: 800px;
+  height: 250px;
 }
 
 img {
@@ -20,13 +69,102 @@ img {
 }
 .bar {
   display: flex;
+  align-self: center;
   flex-direction: row;
   justify-content: center;
   align-content: flex-end;
   background-color: white;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 2px grey;
-  height: 30px;
-  width: 100%;
+  border-radius: 50px;
+  border: #f2f2f2 2px solid;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 45px;
+  width: 70%;
   position: relative;
+}
+
+.bar div {
+  align-self: center;
+}
+
+.bar:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#micIcon {
+  height: 24px;
+  width: 24px;
+}
+
+.buttonBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  margin: 0px 5px 0px 5px;
+  min-width: 125px;
+  color: #5f6368;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover {
+  border: 1px solid #c6c6c6;
+  color: #000000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  border: none;
+  height: 25px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  color: #5f6368;
+  border-top: 1px solid #e4e4e4;
+  font-size: 14px;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: 100px 70px 150px 1fr 70px 70px 70px;
+
+  background-color: #f2f2f2;
+  width: 100%;
+  align-items: center;
+  justify-items: left;
+  grid-template-areas:
+    "country country country country country country country"
+    "adv business hsw . priv terms settings";
+}
+
+footer div.country {
+  grid-area: country;
+  margin-left: 20px;
+}
+footer div.adv {
+  grid-area: adv;
+  margin-left: 20px;
+}
+footer div.business {
+  grid-area: business;
+}
+footer div.hsw {
+  grid-area: hsw;
+}
+footer div.priv {
+  grid-area: priv;
+}
+footer div.terms {
+  grid-area: terms;
+}
+footer div.settings {
+  grid-area: settings;
 }
