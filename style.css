@@ -1,0 +1,32 @@
+.content-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  /* background-color: aqua; */
+  width: 90%;
+  height: 150px;
+}
+
+img {
+  /* border: blue 5px dashed; */
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px grey;
+  height: 30px;
+  width: 100%;
+  position: relative;
+}
